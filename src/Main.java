@@ -1,15 +1,35 @@
+import rotate_array.RotateArray;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int [] arr = {1,2,3,4,5,6};
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        RotateArray rotateArray = new RotateArray();
+        printArr(
+                rotateArray.rotate(arr,2)
+        );
+
+    }
+
+
+    private static int currentIndex(int [] arr , int item){
+        int index = 0;
+        for(int i = 0 ; i< arr.length ; i++){
+            if (arr[i] == item)
+                index = i;
         }
+        return index;
+    }
+
+    static void printArr(int [] items){
+        System.out.print("[");
+        for(int x : items){
+            System.out.print(x + ",");
+        }
+        System.out.println("]");
+
     }
 }
+
