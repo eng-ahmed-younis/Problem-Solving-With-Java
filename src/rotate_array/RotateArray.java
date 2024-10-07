@@ -36,8 +36,8 @@ public class RotateArray {
     }
 
 
-    public int rotateRight(int[] arr, int order) {
-        if (arr == null || order < 0 {
+    public int [] rotateRight(int[] arr, int order) {
+        if (arr == null || order < 0 ){
             throw new IllegalArgumentException("Illegal argument!");
         }
 
@@ -48,6 +48,7 @@ public class RotateArray {
                 arr[j - 1] = temp;              // Place the saved element one position to the left
             }
         }
+        return arr;
     }
 }
 

@@ -1,3 +1,4 @@
+import reverse_polish_notation.EvalReversePolishNotation;
 import rotate_array.RotateArray;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -6,10 +7,15 @@ public class Main {
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5,6};
 
-        RotateArray rotateArray = new RotateArray();
+       /* RotateArray rotateArray = new RotateArray();
         printArr(
                 rotateArray.rotate(arr,2)
-        );
+        );*/
+
+     /*   String [] items = {"2", "1", "+", "3", "*"}; // -> ((2 + 1) * 3) -> 9
+       int result =  EvalReversePolishNotation.evalPPN(items);
+       System.out.println(result);*/
+
 
     }
 
